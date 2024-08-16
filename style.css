@@ -19,9 +19,16 @@ input[type="checkbox"] {}
   color: black;
 }
 
+.contact {
+  background-color: #ffffff80;
+}
+
 .card {
   border-radius: unset;
-  background-color: #ffffff80;
+}
+
+.dropshadow {
+  filter: drop-shadow(0 3px 3px);
 }
 
 .form-control {
@@ -34,10 +41,9 @@ input[type="checkbox"] {}
 }
 
 .hero-bg {
-  background-image: url(https://images.unsplash.com/photo-1490971774356-7fac993cc438?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-image: url(imgs/hero-bg.png);
   background-size: cover;
   background-position: center;
-  background-blend-mode: color-burn;
 }
 
 @media (max-width: 768px) {

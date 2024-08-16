@@ -1,0 +1,47 @@
+:root {}
+
+h5 {
+  color: white;
+}
+
+input {
+  margin-bottom: .5em;
+}
+
+input,
+textarea {
+  --bs-body-bg: #ffffffb3;
+}
+
+input[type="checkbox"] {}
+
+.mdi-movie-roll {
+  color: black;
+}
+
+.card {
+  border-radius: unset;
+  background-color: #ffffff80;
+}
+
+.form-control {
+  border-radius: unset;
+  border: 0;
+}
+
+.landing-blurb {
+  border-left: .25em solid green;
+}
+
+.hero-bg {
+  background-image: url(https://images.unsplash.com/photo-1490971774356-7fac993cc438?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: color-burn;
+}
+
+@media (max-width: 768px) {
+  .landing-blurb {
+    display: none;
+  }
+}

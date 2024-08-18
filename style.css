@@ -1,17 +1,17 @@
 :root {
-  --site-primary: #a74aa7;
+  --site-primary: #bd5dbd;
+  --site-secondary: #a729a7;
+  --site-tertiary: #e3e3e3;
+  --text-white: #ffffff;
+  --text-black: #000000;
 }
 
 header {
   background-color: var(--site-primary);
 }
 
-h5 {
-  color: white;
-}
-
-input {
-  margin-bottom: .5em;
+.navbar-brand {
+  color: var(--text-black);
 }
 
 input,
@@ -20,15 +20,12 @@ textarea {
 }
 
 body {
-  background-color: --bs-tertiary;
+  background-color: var(--site-tertiary);
+  color: var(--text-black);
 }
 
 .mdi {
-  color: var(--site-primary)
-}
-
-.mdi-movie-roll {
-  color: black;
+  color: var(--site-secondary)
 }
 
 .contact {
@@ -43,7 +40,9 @@ body {
 .btn {
   border-radius: unset;
   border: 0;
-  background-color: var(--site-primary);
+  background-color: var(--site-secondary);
+  color: var(--text-white);
+
 }
 
 .form-control {
@@ -59,6 +58,26 @@ body {
   background-image: url(imgs/hero-bg.png);
   background-size: cover;
   background-position: center;
+}
+
+.w-fit {
+  max-width: fit-content;
+}
+
+[class*="col"],
+[class*="row"],
+[class*="container"],
+[class*="blockquote"],
+.navbar-brand,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: unset;
+  margin: unset;
 }
 
 @media (max-width: 768px) {

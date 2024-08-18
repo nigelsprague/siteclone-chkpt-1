@@ -1,4 +1,10 @@
-:root {}
+:root {
+  --site-primary: #a74aa7;
+}
+
+header {
+  background-color: var(--site-primary);
+}
 
 h5 {
   color: white;
@@ -13,7 +19,13 @@ textarea {
   --bs-body-bg: #ffffffb3;
 }
 
-input[type="checkbox"] {}
+body {
+  background-color: --bs-tertiary;
+}
+
+.mdi {
+  color: var(--site-primary)
+}
 
 .mdi-movie-roll {
   color: black;
@@ -25,10 +37,13 @@ input[type="checkbox"] {}
 
 .card {
   border-radius: unset;
+  filter: drop-shadow(0 3px 3px);
 }
 
-.dropshadow {
-  filter: drop-shadow(0 3px 3px);
+.btn {
+  border-radius: unset;
+  border: 0;
+  background-color: var(--site-primary);
 }
 
 .form-control {
@@ -37,7 +52,7 @@ input[type="checkbox"] {}
 }
 
 .landing-blurb {
-  border-left: .25em solid green;
+  border-left: .25em solid var(--site-primary);
 }
 
 .hero-bg {

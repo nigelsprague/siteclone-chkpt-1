@@ -4,19 +4,23 @@
   --site-tertiary: #e3e3e3;
   --text-white: #ffffff;
   --text-black: #000000;
+  --shadow: drop-shadow(0 3px 3px);
 }
 
 header {
   background-color: var(--site-primary);
 }
 
-.navbar-brand {
-  color: var(--text-black);
+.navbar {
+  background-color: var(--site-tertiary);
+  justify-content: center;
 }
 
 input,
-textarea {
+textarea,
+.btn {
   --bs-body-bg: #ffffffb3;
+  margin-bottom: .5rem;
 }
 
 body {
@@ -28,13 +32,26 @@ body {
   color: var(--site-secondary)
 }
 
+.bungee-regular {
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.border-start {
+  border-left: .5rem solid transparent !important;
+}
+
 .contact {
   background-color: #ffffff80;
 }
 
 .card {
   border-radius: unset;
-  filter: drop-shadow(0 3px 3px);
+}
+
+.dropshadow {
+  filter: var(--shadow);
 }
 
 .btn {
@@ -42,7 +59,6 @@ body {
   border: 0;
   background-color: var(--site-secondary);
   color: var(--text-white);
-
 }
 
 .form-control {
@@ -51,7 +67,8 @@ body {
 }
 
 .landing-blurb {
-  border-left: .25em solid var(--site-primary);
+  border-left: .25rem solid var(--site-secondary);
+  display: none;
 }
 
 .hero-bg {
@@ -64,12 +81,23 @@ body {
   max-width: fit-content;
 }
 
+.foot {
+  background-image: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExajlmN3Y0czM1bjAwZGdhd3FmZmN3aXNkY3BraTM5bHM0aDQ5NG5xNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dNCZp9aaDHPi0/giphy.webp);
+  background-size: cover;
+  background-position: center;
+  max-height: 10vh;
+}
+
+.watch {
+  font-size: 175%;
+}
+
 [class*="col"],
 [class*="row"],
 [class*="container"],
 [class*="blockquote"],
+[class*="span"],
 .navbar-brand,
-h1,
 h2,
 h3,
 h4,
@@ -80,8 +108,16 @@ p {
   margin: unset;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 700px) {
   .landing-blurb {
-    display: none;
+    display: block;
+  }
+
+  .services {
+    position: absolute;
+  }
+
+  .navbar {
+    justify-content: start;
   }
 }

@@ -11,99 +11,114 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"
     defer></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Lobster&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <nav class="navbar sticky-top bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><span class="mdi mdi-movie-roll"></span> Picture Show Show Pictures</a>
+  <nav class="navbar sticky-top px-4 align-items-center">
+    <div>
+      <a class="navbar-brand" href="#"><i class="mdi mdi-movie-roll"></i></a>
+      <span class="bungee-regular">Picture Show Show Pictures</span>
     </div>
   </nav>
 
   <header class="container-fluid">
-    <section class="row justify-content-between align-items-center hero-bg">
-      <div class="col-md-8 col-lg-4">
-        <h6 class="text-white">WANT TO WORK WITH US?</h6>
-        <div class="card container contact">
-          <h5>GET IN CONTACT</h5>
-          <fieldset class="row">
+    <section class="row justify-content-between align-items-center hero-bg p-4 pt-1">
+      <div class="col-md-4 dropshadow">
+        <h6 class="text-white p-2 text-center">WANT TO WORK WITH US?</h6>
+        <article class="card container-fluid contact">
+          <span class="dropshadow">
+            <h4 class="text-white p-2">GET IN CONTACT!</h4>
+          </span>
+          <fieldset class="row px-2">
             <div class="col-12">
               <input type="text" class="form-control" name="inputName" id="inputName" placeholder="NAME" />
             </div>
             <div class="col-12">
               <input type="email" class="form-control" name="inputEmail" id="inputEmail" placeholder="EMAIL" />
             </div>
-            <div class="col-7">
+            <div class="col-8">
               <input type="number" class="form-control" name="Phone" id="inputPhone" placeholder="PHONE" />
             </div>
-            <div class="col-5">
-              <input type="number" class="form-control" name="inputExt" id="inputExt" placeholder="EXT." />
+            <div class="col-4">
+              <input type="number" class="form-control border-start" name="inputExt" id="inputExt" placeholder="EXT." />
             </div>
-            <div class="col">
-              <textarea class="form-control" name="inputMessage" id="inputMessage" rows="5"
+            <div class="col-12">
+              <textarea class="form-control" name="inputMessage" id="inputMessage" rows="3"
                 placeholder="MESSAGE"></textarea>
             </div>
-          </fieldset>
-          <fieldset class="row">
-            <div class="col-1 w-fit">
+            <div class="col me-2 w-fit">
               <input type="checkbox" name="checkAgree" id="checkAgree">
             </div>
-            <div class="col">
-              <p>by checking this box you agree to the terms of Lorem, ipsum dolor.</p>
+            <div class="col-10 dropshadow">
+              <p class="text-white mb-2">by checking this box you agree to the terms of Lorem, ipsum dolor.</p>
             </div>
-          </fieldset>
-          <fieldset class="row">
             <div class="col">
               <button type="submit" class="btn">
                 SUBMIT
               </button>
             </div>
           </fieldset>
-        </div>
+        </article>
       </div>
-      <div class="col-6 align-self-start text-white landing-blurb">
-        <h1 class="display-2">Film Production Company</h1>
-        <p>Skate ipsum dolor sit amet, soul skate masonite coping front foot impossible. Vert fastplant Japan air
-          270.</p>
+      <div class="col-7 align-self-start dropshadow landing-blurb mt-5">
+        <article class="text-white px-2">
+          <h1 class="bungee-regular">Film Production Company</h1>
+          <p>Skate ipsum dolor sit amet, soul skate masonite coping front foot impossible. Vert fastplant Japan air
+            270.</p>
+        </article>
       </div>
     </section>
-    <section class="row justify-content-center">
-      <div class="col-md-6 card dropshadow order-md-1">
-        <section class="row text-primary">
-          <i class="mdi col-12 mdi-movie-open"> Directing</i>
-          <i class="mdi col-12 mdi-video-vintage"> Cinematography</i>
-          <i class="mdi col-12 mdi-filmstrip"> Editing</i>
-        </section>
+    <section class="row p-4">
+      <div class="col-md-6 order-md-1 position-relative mb-3">
+        <article class="card services dropshadow">
+          <section class="row p-2">
+            <h5 class="p-2">
+              <i class="mdi pe-2 mdi-movie-open"></i>Directing
+            </h5>
+            <h5 class="p-2">
+              <i class="mdi pe-2 mdi-video-vintage"></i>Cinematography
+            </h5>
+            <h5 class="p-2">
+              <i class="mdi pe-2 mdi-filmstrip"></i>Editing
+            </h5>
+            <h5 class="p-2">
+              <i class="mdi pe-2 mdi-headphones"></i>Audio Production
+            </h5>
+            <h5 class="p-2">
+              <i class="mdi pe-2 mdi-typewriter"></i>Script Doctoring
+            </h5>
+          </section>
+        </article>
       </div>
-      <div class="col-md-6 order-md-0">
-        <h1>Kevin Harris Kevin Staab helipop gnar bucket darkslide</h1>
-        <p>Skate ipsum dolor sit amet, nosepicker hip Kris Markovich crail slide skate or die aerial. Flail coping
-          Schmitt Stix gnarly tuna-flip disaster. Crail slide Japan air gnar bucket slob air fakie Jim
-          Phillips.</p>
+      <div class="col-md-6 order-md-0 text-white pe-md-3">
+        <h1>Kevin Harris Kevin Staab helipop gnar</h1>
+        <p>Skate ipsum dolor sit amet, nosepicker hip Kris Markovich crail slide skate or die aerial.</p>
       </div>
     </section>
   </header>
 
   <main class="container-fluid">
-    <section class="row align-items-center">
+    <section class="row align-items-center p-4 bg-white">
       <div class="col-md-4">
         <img
           src="https://images.unsplash.com/photo-1639426236474-b51627e72016?q=80&w=1615&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           class="img-fluid" alt="woman operating camera" />
       </div>
-      <div class="col">
+      <div class="col mt-4 mt-md-0 p-md-5 pb-md-0">
         <h1>
           <i class="mdi mdi-video-4k-box"></i> Kevin Harris Kevin Staab helipop gnar bucket darkslide
         </h1>
-        <p>Skate ipsum dolor sit amet, nosepicker hip Kris Markovich crail slide skate or die aerial. Flail
-          coping
+        <p>Skate ipsum dolor sit amet, nosepicker hip Kris Markovich crail slide skate or die aerial. Flail coping
           Schmitt Stix gnarly tuna-flip disaster. Crail slide Japan air gnar bucket slob air fakie Jim
           Phillips.</p>
         <section class="row justify-content-end">
-          <div class="w-fit p-0">
-            <button type="button" class="btn">
+          <div class="w-fit py-3 px-4">
+            <button type="button" class="btn mb-0">
               MORE
             </button>
           </div>
@@ -111,44 +126,64 @@
       </div>
     </section>
 
-    <section class="row justify-content-evenly align-items-center text-center">
-      <div class="col-md-3 card order-md-1">
+    <section class="row justify-content-evenly align-items-center text-center p-4 dropshadow">
+      <div class="col-md-3 card order-md-1 py-4 py-md-3 px-md-4">
         <blockquote class="blockquote">
           <i class="mdi mdi-star-circle"></i>
           <i class="mdi mdi-star-circle"></i>
           <i class="mdi mdi-star-circle"></i>
-          <p>A well-known quote, contained in a blockquote element.</p>
+          <p>"I've made a huge mistake."</p>
         </blockquote>
         <figcaption class="blockquote-footer">
-          Someone famous in <cite title="Source Title">Source Title</cite>
+          Gob <cite title="Source Title">Arrested Development</cite>
         </figcaption>
       </div>
-      <div class="col-md-3 card order-md-0">
+      <div class="col-md-3 card order-md-0 my-4 my-md-0 py-4 py-md-3 px-md-4">
         <blockquote class="blockquote">
-          <p>A well-known quote, contained in a blockquote element.</p>
+          <p>"No touching!"</p>
         </blockquote>
         <figcaption class="blockquote-footer">
-          Someone famous in <cite title="Source Title">Source Title</cite>
+          Guard
         </figcaption>
       </div>
-      <div class="col-md-3 card order-md-2">
+      <div class="col-md-3 card order-md-2 py-4 py-md-3 px-md-4">
         <blockquote class="blockquote">
-          <p>A well-known quote, contained in a blockquote element.</p>
+          <p>"Annyong."</p>
         </blockquote>
         <figcaption class="blockquote-footer">
-          Someone famous in <cite title="Source Title">Source Title</cite>
+          Annyong
         </figcaption>
       </div>
     </section>
   </main>
+
   <footer class="container-fluid">
-    <section class="row justify-content-center">
-      <iframe class="col-12" src="https://youtu.be/nbD6s2HamyQ" frameborder="0"></iframe>
-      <div class="col-md-3">address</div>
-      <div class="col-md-3">contact</div>
-      <div class="col-md-3">socials</div>
 
-
+    <section class="row">
+      <iframe class="row foot opacity-75"></iframe>
+    </section>
+    <section class="row justify-content-evenly align-items-baseline p-4">
+      <div class="col-md-3">
+        <p><strong>Visit us</strong>
+          <br>
+          4th Street Bridge, Los Angeles, California, USA
+        </p>
+      </div>
+      <div class="col-md-3 py-4 py-md-0">
+        <p><strong>Contact us</strong>
+          <br>
+          (458) 666-HELL
+          <br>
+          Mon-Fri/9:00am-5:00pm
+        </p>
+      </div>
+      <div class="col-md-3">
+        <p><strong>Watch us</strong></p>
+        <i class="mdi watch pe-2 mdi-hulu"></i>
+        <i class="mdi watch pe-2 mdi-netflix"></i>
+        <i class="mdi watch pe-2 mdi-vimeo"></i>
+        <i class="mdi watch pe-2 mdi-youtube"></i>
+      </div>
     </section>
   </footer>
 
